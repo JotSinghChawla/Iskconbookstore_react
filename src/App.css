@@ -1,0 +1,9 @@
+/* @import url('https://fonts.googleapis.com/css?family=Amaranth:700,400&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:700"); */
+
+
+* {
+    font-weight: 550;
+    box-sizing: border-box;
+    font-family:  Arial, Helvetica, sans-serif;
+}
