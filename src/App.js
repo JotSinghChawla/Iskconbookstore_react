@@ -1,5 +1,4 @@
 import React,{ Component } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Main from './components/Main';
 import { HashRouter } from 'react-router-dom';
 
