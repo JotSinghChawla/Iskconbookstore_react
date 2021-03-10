@@ -7,17 +7,17 @@ const SocialIcons = () => {
     return (
         <MDBNav>
             <MDBNavItem>
-                <MDBNavLink to='chart' to='https://www.facebook.com/iskconglobal' >
+                <MDBNavLink className={styles.navLinkPadding} to='/facebook' target='_blank'>
                     <FaFacebookF className={styles.social + ' ' +styles.facebook} />
                 </MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
-                <MDBNavLink to='https://twitter.com/india_iskcon' target='_blank'>
+                <MDBNavLink className={styles.navLinkPadding} to='/twitter' target='_blank'>
                     <FaTwitter className={styles.social + ' ' + styles.twitter}  />
                 </MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
-                <MDBNavLink to='https://www.youtube.com/channel/UCnQ0YFFLezzd5TEx4j8Dfzw'>
+                <MDBNavLink className={styles.navLinkPadding} to='/youtube' target='_blank'>
                     <FaYoutube className={styles.social + ' ' +styles.youtube}  />
                 </MDBNavLink>
             </MDBNavItem>  

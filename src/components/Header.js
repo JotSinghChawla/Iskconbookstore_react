@@ -2,13 +2,16 @@ import { React, useState } from 'react'
 import { MDBNavbar, MDBCollapse, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler } from 'mdbreact'
 import SocialIcons from './SocialIcons'
 
-const navbarStyle ={
+const navbarStyle = { 
   backgroundColor: '#fada5e',
-  fontWeight: 'bold',
+  fontWeight: 'normal',
   fontSize: '18px',
   color: '#584E4A',
   padding: '5px 10px',
   boxShadow: '0px 4px 16px 0px rgb(119 119 119 / 50%)',
+}
+const menu = {
+  flexGrow: '0.2'
 }
 
 const Header = () => {
@@ -16,32 +19,32 @@ const Header = () => {
 const [navbarOpen, setNavbarOpen] = useState(false)
 
     return (
-        <MDBNavbar style={navbarStyle} color='dark' expand="md" fixed='top'>
+        <MDBNavbar style={navbarStyle} light expand="md" fixed='top'>
           <div className='container-fluid'>
-            <MDBNavbarBrand href="#home"> 
+            <MDBNavbarBrand href="/home"> 
               <img src={process.env.PUBLIC_URL + '/assets/images/demo.png'} height='45' width='45' className='d-inline-block'
               alt="ISKCON - The Hare Krishna Movement" /> <strong> ISKCON </strong> 
             </MDBNavbarBrand>
-            <MDBNavbarToggler onClick={ () => setNavbarOpen(true) } />
-            <MDBCollapse id='navbarCollapse' isOpen={navbarOpen} navbar >
+            <MDBCollapse style={menu} isOpen={navbarOpen} navbar >
+              
               <MDBNavbarNav className='ml-auto mr-auto'>
-
                 <MDBNavItem active>
-                  <MDBNavLink to="#">Home</MDBNavLink>
+                  <MDBNavLink to="./home">Home</MDBNavLink>
                 </MDBNavItem>
                 <MDBNavItem>
-                  <MDBNavLink to="#!">Bookstore</MDBNavLink>
+                  <MDBNavLink to="/bookstore">Bookstore</MDBNavLink>
                 </MDBNavItem>
                 <MDBNavItem>
-                  <MDBNavLink to="https://www.iskcon.org/about-us/what-is-iskcon.php">About us</MDBNavLink>
+                  <MDBNavLink to="/aboutus">About Us</MDBNavLink>
                 </MDBNavItem>
                 <MDBNavItem>
-                  <MDBNavLink to="https://centres.iskcon.org/">Contact us</MDBNavLink>
+                  <MDBNavLink to="/contactus">Contact us</MDBNavLink>
                 </MDBNavItem>
 
               </MDBNavbarNav>
             </MDBCollapse>
             <SocialIcons />
+            <MDBNavbarToggler onClick={ () => setNavbarOpen(!navbarOpen) } />
           </div>
         </MDBNavbar>
     )
