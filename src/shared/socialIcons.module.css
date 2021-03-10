@@ -1,0 +1,36 @@
+.social {
+    background: white;
+    width: 2.3rem;
+    height: 2.3rem;
+    padding: 0.3rem;
+    border-radius: 12%;
+    overflow: overlay;
+}
+.social:hover {
+    border-radius: 50%;
+	-webkit-transition: all 0.4s;
+	   -moz-transition: all 0.4s;
+	     -o-transition: all 0.4s;
+	        transition: all 0.4s;
+}
+.facebook {
+    color: #3B5998;
+}
+.twitter {
+    color: #55ACEE;
+}
+.youtube {
+    color: #ff0000;
+}
+.facebook:hover { 
+    color:white;
+    background-color: #3B5998;
+}
+.twitter:hover {
+    background: #55ACEE;
+    color:white;
+}
+.youtube:hover {
+    color:white;
+    background: #F02C2A;
+}
