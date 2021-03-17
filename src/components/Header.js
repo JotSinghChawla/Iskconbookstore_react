@@ -1,6 +1,7 @@
 import { React, useState } from 'react'
-import { MDBNavbar, MDBCollapse, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler } from 'mdbreact'
+import { MDBNavbar, MDBCollapse, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBHamburgerToggler } from 'mdbreact'
 import SocialIcons from './SocialIcons'
+import abc from '../assets/images/demo.png'
 
 const navbarStyle = { 
   backgroundColor: '#fada5e',
@@ -22,7 +23,7 @@ const [navbarOpen, setNavbarOpen] = useState(false)
         <MDBNavbar style={navbarStyle} light expand="md" fixed='top'>
           <div className='container-fluid'>
             <MDBNavbarBrand href="/home"> 
-              <img src={process.env.PUBLIC_URL + '/assets/images/demo.png'} height='45' width='45' className='d-inline-block'
+              <img src={abc} height='45' width='45' className='d-inline-block'
               alt="ISKCON - The Hare Krishna Movement" /> <strong> ISKCON </strong> 
             </MDBNavbarBrand>
             <MDBCollapse style={menu} isOpen={navbarOpen} navbar >
@@ -44,7 +45,7 @@ const [navbarOpen, setNavbarOpen] = useState(false)
               </MDBNavbarNav>
             </MDBCollapse>
             <SocialIcons />
-            <MDBNavbarToggler onClick={ () => setNavbarOpen(!navbarOpen) } />
+            <MDBHamburgerToggler className='d-md-none' color="#d3531a" id="hamburger1" onClick={ () => setNavbarOpen(!navbarOpen) } />
           </div>
         </MDBNavbar>
     )
