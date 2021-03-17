@@ -1,0 +1,47 @@
+.footer {
+    background-color: #363839;
+    color:white;
+    padding-top: 20px;
+}
+.footer .col-12 {
+    margin: 20px 0px;
+    height: 1000px;
+}
+.footer p{
+    max-width: 49rem;
+}
+.footerSocial {
+    display: grid;
+    justify-content: center;
+    margin-top:40px;
+}
+.copyright {
+    background-color: black;
+    font-weight: 100;
+    line-height: 1.6rem;
+    margin-top: 20px;
+}
+.copyright a {
+    color:#6c757d;
+    display: inherit;
+    padding: 0px;
+}
+.copyright a:hover {
+    color: white;
+    opacity: 1;
+}
+.italic {
+    font-style: oblique;
+    font-weight: thin;
+    font-family: "Gill Sans", sans-serif;
+    opacity:0.8;
+}
+.iskconFooter {
+    font-size: 5rem;
+    font-family: monospace;
+}
+.followFooter {
+    font-size:3rem;
+    text-decoration: underline solid grey 5px;
+    text-underline-offset: 0.4rem;
+}
