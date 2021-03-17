@@ -1,0 +1,27 @@
+.mainImage {
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.7) ),  url('../assets/images/main.jpg') ;
+    text-align: center;
+    height:100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    position: relative;/*
+    margin-top: 0px;
+    width:100%;*/
+}
+.imageText {
+    color: white;
+    filter: brightness(1);
+    width: 100%;
+    top:75%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.italicMain {
+    font-style: oblique;
+    font-weight: thin;
+    font-family: "Gill Sans", sans-serif;
+    opacity:0.8;
+}
